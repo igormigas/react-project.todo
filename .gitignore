@@ -1,0 +1,6 @@
+node_modules
+_archive
+dist
+*.dist.js
+.env.*
+*.zip
