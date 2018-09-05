@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Box from '../../hoc/Box';
-
 import classes from '../Card/Card.scss'
 
 class CardItem extends React.Component {
@@ -71,7 +69,7 @@ class CardItem extends React.Component {
 		let priorClasses = this.state.priority ? 'fas fa-star' : 'far fa-star'
 
 		return (
-			<li
+			<><li
 				className={classes.CardItem + css()}>
 				<div
 					className={classes.Checkbox}
@@ -98,7 +96,7 @@ class CardItem extends React.Component {
 							className="fas fa-trash-alt"
 							onClick={this.onItemDelete} />
 				</div>
-			</li>
+			</li></>
 		);
 	}
 }

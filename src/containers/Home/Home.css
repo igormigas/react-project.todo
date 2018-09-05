@@ -1,3 +1,14 @@
+.wrapper {
+	width: 1180px;
+	margin: 0px auto;
+}
+
+.Header {
+	margin: 30px 0px;
+	padding: 5px 20px;
+	background-color: #eee;
+}
+
 .FlexContainer {
 	display: flex;
 	flex-flow: row wrap;

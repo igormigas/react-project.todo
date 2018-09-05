@@ -50,8 +50,7 @@ module.exports = {
 				exclude: /node_modules/,
 				loader: 'babel-loader',
 				query: {
-					plugins: ['transform-class-properties'],
-					presets: ['env', 'react']
+					plugins: ['@babel/plugin-proposal-class-properties']
 				}
 			},
 			{
@@ -99,7 +98,7 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, dirDistribution),
 		filename: 'scripts/[name].dist.js',
-		publicPath: '/'
+		publicPath: './'
 	},
 	plugins: [
 		new HtmlWebpackPlugin({

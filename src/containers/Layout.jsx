@@ -1,8 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-import Box from '../hoc/Box';
-
 import classes from './Layout.css'
 
 class Layout extends React.Component {

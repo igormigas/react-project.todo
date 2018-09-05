@@ -49,7 +49,13 @@ class Home extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div className={classes.wrapper}>
+				<div className={classes.Header}>
+					<p><b>Todo Application (Concept)</b><br />
+					made with React<br />
+					by Igor Migasiewcz (<a href="https://github.com/igormigas/react-project.todo">github</a>)</p>
+					<p>last update: 5 Sept 2018</p>
+				</div>
 				<CardBar eventSubmit={this.onNewCardSubmit} />
 				<div className={classes.FlexContainer}>
 					{this.state.cards.map( card => (

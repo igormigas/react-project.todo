@@ -36,7 +36,7 @@ export const defaultTodos = [
 		id: 3,
 		card_id: 1,
 		label: 'Water Marta\'s plants',
-		description: null,
+		description: 'or she will get mad..',
 		notes: 'Remember about Strelicja, she likes a lot of water. ',
 		active: true,
 		priority: true,
