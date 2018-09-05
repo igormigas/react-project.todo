@@ -1,6 +1,7 @@
 import React from 'react';
 
 import CardItem from '../CardItem/CardItem';
+import Icon from '../../components/Icon/Icon';
 
 import classes from './Card.scss';
 
@@ -181,12 +182,12 @@ class Card extends React.Component {
 						onDoubleClick={this.onLabelEditHandler}>
 						{label}</div>
 					<div className={classes.SettingsBox}>
-						<i
-							className="far fa-edit"
-							onClick={this.onLabelEditHandler} />
-						<i
-							className="fas fa-trash-alt"
-							onClick={this.onCardDelete} />
+						<Icon
+							name="far fa-edit"
+							clickEvent={this.onLabelEditHandler} />
+						<Icon
+							name="fas fa-trash-alt"
+							clickEvent={this.onCardDelete} />
 					</div>
 				</div>
 				<div

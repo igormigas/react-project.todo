@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Icon from '../../components/Icon/Icon';
+
 import classes from '../Card/Card.scss'
 
 class CardItem extends React.Component {
@@ -90,11 +92,11 @@ class CardItem extends React.Component {
 				</div>
 				<div
 					className={classes.SettingsBox}>
-						<i className={priorClasses} onClick={this.onItemPriorityChange} />
-						<i className="far fa-edit" />
-						<i
-							className="fas fa-trash-alt"
-							onClick={this.onItemDelete} />
+						<Icon name={priorClasses} clickEvent={this.onItemPriorityChange} />
+						<Icon name="far fa-edit" />
+						<Icon
+							name="fas fa-trash-alt"
+							clickEvent={this.onItemDelete} />
 				</div>
 			</li></>
 		);
