@@ -2,6 +2,7 @@ import React from 'react';
 
 import Card from '../Card/Card';
 import CardBar from '../CardBar/CardBar';
+import Credits from '../../components/Credits/Credits';
 
 import { defaultCards, defaultTodos } from '../../defaults/todos';
 import classes from './Home.css';
@@ -50,12 +51,7 @@ class Home extends React.Component {
 	render() {
 		return (
 			<div className={classes.wrapper}>
-				<div className={classes.Header}>
-					<p><b>Todo Application (Concept)</b><br />
-					made with React<br />
-					by Igor Migasiewcz (<a href="https://github.com/igormigas/react-project.todo">github</a>)</p>
-					<p>last update: 5 Sept 2018</p>
-				</div>
+				<Credits />
 				<CardBar eventSubmit={this.onNewCardSubmit} />
 				<div className={classes.FlexContainer}>
 					{this.state.cards.map( card => (

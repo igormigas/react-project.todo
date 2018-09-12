@@ -48,18 +48,14 @@ class Layout extends React.Component {
 	render() {
 
 		return (
-			<div className={'App ' + classes.App}>				
-				<div id="header">
-					<img className={classes.LogoImage} src="/images/logo-3x.png" />
-				</div>
-
+			<div className={'App ' + classes.App}>
+				
 				<main className={classes.Main}>
 					{this.props.children}
 				</main>
-				<Footer />
 			</div>
 		);
 	}
 }
 
-export default withRouter(Layout);
+export default Layout;

@@ -5,11 +5,16 @@ import React from 'react';
 import './styles/global.scss';
 
 // React Components
+import Layout from './containers/Layout';
 import Home from './containers/Home/Home';
 
 class App extends React.Component {
 	render() {
-		return <Home />;
+		return (
+			<Layout>
+				<Home />
+			</Layout>
+		);
 	}
 }
 
